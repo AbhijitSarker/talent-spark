@@ -2,22 +2,24 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import ActiveLink from '../ActiveLink/ActiveLink';
+import './Header.css'
 
 const Header = () => {
     const [open, setOpen] = useState(false);
     return (
-        <div className='bg-purple-50 sticky top-0  pt-2'>
+        <div className='bg sticky top-0  pt-2'>
             <nav className=' container mx-auto pt-2 pb-5 flex  h-16 justify-between items-center'>
 
-                <img className='h-10 md:h-16 lg:h-20' src="/src//assets/logo/logo.png" alt="" />
+                <img className='h-10 h-16' src="/src//assets/logo/logo.png" alt="" />
                 <div>
                     <div className={`md:flex  absolute md:static duration-500 mb-2   ${open ? 'top-20' : ' top-20 -top-48'}`}>
-                        <Link className='mr-10  text-purple-600 hover:text-blue-500 font-medium  block' to='/'>Home</Link>
-                        <Link className='mr-10 text-purple-600 hover:text-blue-500 font-medium block' to='/jobs'>Jobs</Link>
-                        <Link className='mr-10 text-purple-600 hover:text-blue-500 font-medium block' to='/applied'>Applied</Link>
-                        <Link className='mr-10 text-purple-600 hover:text-blue-500 font-medium block' to='/blogs'>Blogs</Link>
-                        <Link className='mr-10 text-purple-600 hover:text-blue-500 font-medium block' to='/contact'>Contact</Link>
-                        <Link className='mr-10 text-purple-600 hover:text-blue-500 font-medium block' to='/about'>About</Link>
+                        <ActiveLink className='mr-10  text-purple-600 hover:text-blue-500 font-medium  block' to='/'>Home</ActiveLink>
+                        <ActiveLink className='mr-10 text-purple-600 hover:text-blue-500 font-medium block' to='/jobs'>Jobs</ActiveLink>
+                        <ActiveLink className='mr-10 text-purple-600 hover:text-blue-500 font-medium block' to='/applied'>Applied</ActiveLink>
+                        <ActiveLink className='mr-10 text-purple-600 hover:text-blue-500 font-medium block' to='/blogs'>Blogs</ActiveLink>
+                        <ActiveLink className='mr-10 text-purple-600 hover:text-blue-500 font-medium block' to='/contact'>Contact</ActiveLink>
+                        <ActiveLink className='mr-10 text-purple-600 hover:text-blue-500 font-medium block' to='/about'>About</ActiveLink>
 
                     </div>
                     <div className=''>
@@ -31,7 +33,7 @@ const Header = () => {
                                 }
                             </span>
                         </div>
-                        <button className='float-right md:mr-10 lg:mr-10 rounded-md bg-sky-500 hover:bg-purple-600 px-4 py-1 font-medium text-white'> Apply</button>
+                        <button className='float-right mr-10 rounded-md bg-sky-500 hover:bg-purple-600 px-4 py-1 font-medium text-white'> Apply</button>
 
                     </div>
 
