@@ -1,0 +1,14 @@
+.contact-image {
+    background-image: url("/src/assets/images/contact.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-color {
+    background: rgba(0, 0, 0, 0.468);
+}
+
+.bg-service {
+    background-color: #f9f9ff;
+}

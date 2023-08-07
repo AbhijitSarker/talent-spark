@@ -1,10 +1,17 @@
 import React from 'react';
+import JobComponent from '../Job/job';
+import JobCard from '../JobCard/JobCard';
+// import JobCard from './JobCard';
 
 const Jobs = () => {
+
     return (
-        <div>
-            <h2>Jobs</h2>
-        </div>
+        // <JobComponent></JobComponent>
+        <JobCard></JobCard>
+
+
+
+
     );
 };
 
