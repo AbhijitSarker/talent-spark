@@ -2,7 +2,7 @@
     {
         "id": 1,
         "company_name": "Google",
-        "company_logo": "google_logo.png",
+        "company_logo": "/src/assets/logo/google_logo.png",
         "company_phone": "+1 (123) 456-7890",
         "company_email": "contact@google.com",
         "company_location": "Mountain View, CA",
@@ -29,7 +29,7 @@
     {
         "id": 2,
         "company_name": "Tesla",
-        "company_logo": "tesla_logo.png",
+        "company_logo": "/src/assets/logo/tesla_logo.png",
         "company_phone": "+1 (234) 567-8901",
         "company_email": "careers@tesla.com",
         "company_location": "Palo Alto, CA",
@@ -55,7 +55,7 @@
     {
         "id": 3,
         "company_name": "Microsoft",
-        "company_logo": "microsoft_logo.png",
+        "company_logo": "/src/assets/logo/microsoft_logo.png",
         "company_phone": "+1 (345) 678-9012",
         "company_email": "jobs@microsoft.com",
         "company_location": "Redmond, WA",
@@ -80,7 +80,7 @@
     {
         "id": 4,
         "company_name": "Facebook",
-        "company_logo": "facebook_logo.png",
+        "company_logo": "/src/assets/logo/facebook_logo.png",
         "company_phone": "+1 (456) 789-0123",
         "company_email": "careers@facebook.com",
         "company_location": "Menlo Park, CA",
@@ -105,7 +105,7 @@
     {
         "id": 5,
         "company_name": "Amazon",
-        "company_logo": "amazon_logo.png",
+        "company_logo": "/src/assets/logo/amazon_logo.png",
         "company_phone": "+1 (567) 890-1234",
         "company_email": "jobopenings@amazon.com",
         "company_location": "Seattle, WA",
@@ -132,7 +132,7 @@
     {
         "id": 6,
         "company_name": "Apple",
-        "company_logo": "apple_logo.png",
+        "company_logo": "/src/assets/logo/apple_logo.png",
         "company_phone": "+1 (678) 901-2345",
         "company_email": "jobs@apple.com",
         "company_location": "Cupertino, CA",
@@ -159,7 +159,7 @@
     {
         "id": 7,
         "company_name": "Netflix",
-        "company_logo": "netflix_logo.png",
+        "company_logo": "/src/assets/logo/netflix_logo.png",
         "company_phone": "+1 (789) 012-3456",
         "company_email": "careers@netflix.com",
         "company_location": "Los Gatos, CA",
@@ -186,7 +186,7 @@
     {
         "id": 8,
         "company_name": "SpaceX",
-        "company_logo": "spacex_logo.png",
+        "company_logo": "/src/assets/logo/spacex_logo.png",
         "company_phone": "+1 (890) 123-4567",
         "company_email": "careers@spacex.com",
         "company_location": "Hawthorne, CA",
@@ -213,7 +213,7 @@
     {
         "id": 9,
         "company_name": "Uber",
-        "company_logo": "uber_logo.png",
+        "company_logo": "/src/assets/logo/uber_logo.png",
         "company_phone": "+1 (012) 345-6789",
         "company_email": "jobs@uber.com",
         "company_location": "San Francisco, CA",
@@ -240,7 +240,7 @@
     {
         "id": 10,
         "company_name": "Airbnb",
-        "company_logo": "airbnb_logo.png",
+        "company_logo": "/src/assets/logo/airbnb_logo.png",
         "company_phone": "+1 (234) 567-8901",
         "company_email": "careers@airbnb.com",
         "company_location": "San Francisco, CA",
@@ -267,7 +267,7 @@
     {
         "id": 11,
         "company_name": "IBM",
-        "company_logo": "ibm_logo.png",
+        "company_logo": "/src/assets/logo/airbnb_logo.png",
         "company_phone": "+1 (345) 678-9012",
         "company_email": "jobs@ibm.com",
         "company_location": "Armonk, NY",
@@ -294,7 +294,7 @@
     {
         "id": 12,
         "company_name": "Adobe",
-        "company_logo": "adobe_logo.png",
+        "company_logo": "/src/assets/logo/adobe_logo.png",
         "company_phone": "+1 (456) 789-0123",
         "company_email": "careers@adobe.com",
         "company_location": "San Jose, CA",
@@ -321,7 +321,7 @@
     {
         "id": 13,
         "company_name": "Netflix",
-        "company_logo": "netflix_logo.png",
+        "company_logo": "/src/assets/logo/netflix_logo.png",
         "company_phone": "+1 (567) 890-1234",
         "company_email": "careers@netflix.com",
         "company_location": "Los Gatos, CA",
@@ -348,7 +348,7 @@
     {
         "id": 14,
         "company_name": "SpaceX",
-        "company_logo": "spacex_logo.png",
+        "company_logo": "/src/assets/logo/spacex_logo.png",
         "company_phone": "+1 (890) 123-4567",
         "company_email": "careers@spacex.com",
         "company_location": "Hawthorne, CA",
@@ -375,7 +375,7 @@
     {
         "id": 15,
         "company_name": "Amazon",
-        "company_logo": "amazon_logo.png",
+        "company_logo": "/src/assets/logo/amazon_logo.png",
         "company_phone": "+1 (012) 345-6789",
         "company_email": "jobopenings@amazon.com",
         "company_location": "Seattle, WA",
@@ -402,7 +402,7 @@
     {
         "id": 16,
         "company_name": "Airbnb",
-        "company_logo": "airbnb_logo.png",
+        "company_logo": "/src/assets/logo/airbnb_logo.png",
         "company_phone": "+1 (234) 567-8901",
         "company_email": "careers@airbnb.com",
         "company_location": "San Francisco, CA",
@@ -429,7 +429,7 @@
     {
         "id": 17,
         "company_name": "Google",
-        "company_logo": "google_logo.png",
+        "company_logo": "/src/assets/logo/google_logo.png",
         "company_phone": "+1 (123) 456-7890",
         "company_email": "contact@google.com",
         "company_location": "Mountain View, CA",
@@ -456,7 +456,7 @@
     {
         "id": 18,
         "company_name": "Tesla",
-        "company_logo": "tesla_logo.png",
+        "company_logo": "/src/assets/logo/tesla_logo.png",
         "company_phone": "+1 (234) 567-8901",
         "company_email": "careers@tesla.com",
         "company_location": "Palo Alto, CA",
@@ -482,7 +482,7 @@
     {
         "id": 19,
         "company_name": "Microsoft",
-        "company_logo": "microsoft_logo.png",
+        "company_logo": "/src/assets/logo/microsoft_logo.png",
         "company_phone": "+1 (345) 678-9012",
         "company_email": "jobs@microsoft.com",
         "company_location": "Redmond, WA",
@@ -507,7 +507,538 @@
     {
         "id": 20,
         "company_name": "Facebook",
-        "company_logo": "facebook_logo.png",
+        "company_logo": "/src/assets/logo/facebook_logo.png",
+        "company_phone": "+1 (456) 789-0123",
+        "company_email": "careers@facebook.com",
+        "company_location": "Menlo Park, CA",
+        "job_name": "Product Designer",
+        "job_location": "Remote",
+        "job_description": "Create user-centered design solutions for social media platforms.",
+        "job_responsibilities": [
+            "Collaborate with product managers and engineers to define design goals and requirements.",
+            "Design intuitive and visually appealing user interfaces and experiences.",
+            "Create wireframes, mockups, and prototypes to communicate design concepts.",
+            "Conduct user research and usability testing to iterate on design solutions."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Design, HCI, or related field",
+            "Proficiency in design software (e.g., Sketch, Figma, Adobe Creative Suite)",
+            "Strong portfolio showcasing previous design work",
+            "Experience with user-centered design principles and methodologies"
+        ],
+        "salary_range": "$75,000 - $110,000 per year",
+        "required_experience": "3+ years in UI/UX design."
+    },
+    
+    {
+        "id": 21,
+        "company_name": "Google",
+        "company_logo": "/src/assets/logo/google_logo.png",
+        "company_phone": "+1 (123) 456-7890",
+        "company_email": "contact@google.com",
+        "company_location": "Mountain View, CA",
+        "job_name": "Software Engineer",
+        "job_location": "Remote",
+        "job_description": "Develop and maintain software applications that impact millions of users.",
+        "job_responsibilities": [
+            "Collaborate with cross-functional teams to define, design, and ship new features.",
+            "Write clean, maintainable, and efficient code.",
+            "Troubleshoot, debug, and optimize software solutions.",
+            "Participate in code reviews to maintain code quality and share knowledge.",
+            "Stay up-to-date with industry best practices and technologies."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Computer Science or related field",
+            "Proficiency in Python and JavaScript",
+            "Experience with web development frameworks",
+            "Strong problem-solving skills",
+            "Familiarity with version control systems"
+        ],
+        "salary_range": "$80,000 - $120,000 per year",
+        "required_experience": "3+ years in software development."
+    },
+    {
+        "id": 22,
+        "company_name": "Tesla",
+        "company_logo": "/src/assets/logo/tesla_logo.png",
+        "company_phone": "+1 (234) 567-8901",
+        "company_email": "careers@tesla.com",
+        "company_location": "Palo Alto, CA",
+        "job_name": "Electrical Engineer",
+        "job_location": "On-site",
+        "job_description": "Design and optimize electrical systems for cutting-edge electric vehicles.",
+        "job_responsibilities": [
+            "Design and develop electrical circuits and components.",
+            "Conduct simulations and testing to ensure system performance.",
+            "Collaborate with multidisciplinary teams to integrate electrical systems.",
+            "Troubleshoot and resolve electrical issues.",
+            "Stay informed about emerging technologies in the field."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Electrical Engineering",
+            "Proficiency in CAD software (AutoCAD, SolidWorks)",
+            "Hands-on experience with circuit design and testing",
+            "Understanding of power electronics and battery systems"
+        ],
+        "salary_range": "$70,000 - $110,000 per year",
+        "required_experience": "2+ years in electrical engineering."
+    },
+    {
+        "id": 23,
+        "company_name": "Microsoft",
+        "company_logo": "/src/assets/logo/microsoft_logo.png",
+        "company_phone": "+1 (345) 678-9012",
+        "company_email": "jobs@microsoft.com",
+        "company_location": "Redmond, WA",
+        "job_name": "Cloud Solutions Architect",
+        "job_location": "On-site",
+        "job_description": "Design and implement cloud solutions for enterprise clients.",
+        "job_responsibilities": [
+            "Collaborate with clients to understand their business needs and translate them into technical solutions.",
+            "Design, deploy, and manage scalable and reliable cloud infrastructure.",
+            "Lead and mentor cross-functional teams during project implementations.",
+            "Stay up-to-date with cloud technologies and industry trends."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Computer Science or related field",
+            "Certifications in cloud technologies (e.g., AWS, Azure)",
+            "Strong knowledge of cloud platforms and architecture design",
+            "Experience with infrastructure-as-code tools (e.g., Terraform)"
+        ],
+        "salary_range": "$90,000 - $130,000 per year",
+        "required_experience": "5+ years in cloud architecture and deployment."
+    },
+    {
+        "id": 24,
+        "company_name": "Facebook",
+        "company_logo": "/src/assets/logo/facebook_logo.png",
+        "company_phone": "+1 (456) 789-0123",
+        "company_email": "careers@facebook.com",
+        "company_location": "Menlo Park, CA",
+        "job_name": "Product Designer",
+        "job_location": "Remote",
+        "job_description": "Create user-centered design solutions for social media platforms.",
+        "job_responsibilities": [
+            "Collaborate with product managers and engineers to define design goals and requirements.",
+            "Design intuitive and visually appealing user interfaces and experiences.",
+            "Create wireframes, mockups, and prototypes to communicate design concepts.",
+            "Conduct user research and usability testing to iterate on design solutions."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Design, HCI, or related field",
+            "Proficiency in design software (e.g., Sketch, Figma, Adobe Creative Suite)",
+            "Strong portfolio showcasing previous design work",
+            "Experience with user-centered design principles and methodologies"
+        ],
+        "salary_range": "$75,000 - $110,000 per year",
+        "required_experience": "3+ years in UI/UX design."
+    },
+    {
+        "id": 25,
+        "company_name": "Amazon",
+        "company_logo": "/src/assets/logo/amazon_logo.png",
+        "company_phone": "+1 (567) 890-1234",
+        "company_email": "jobopenings@amazon.com",
+        "company_location": "Seattle, WA",
+        "job_name": "Warehouse Associate",
+        "job_location": "On-site",
+        "job_description": "Manage inventory and ensure timely order fulfillment.",
+        "job_responsibilities": [
+            "Receive and inspect incoming shipments.",
+            "Maintain accurate records of inventory.",
+            "Pick, pack, and ship customer orders.",
+            "Operate warehouse equipment safely and efficiently.",
+            "Maintain a clean and organized work environment."
+        ],
+        "job_requirements": [
+            "High school diploma or equivalent",
+            "Physical fitness and ability to lift heavy packages",
+            "Attention to detail and accuracy",
+            "Basic computer skills for inventory tracking",
+            "Experience in warehouse operations is a plus"
+        ],
+        "salary_range": "$25,000 - $35,000 per year",
+        "required_experience": "None, training provided."
+    },
+    {
+        "id": 26,
+        "company_name": "Apple",
+        "company_logo": "/src/assets/logo/apple_logo.png",
+        "company_phone": "+1 (678) 901-2345",
+        "company_email": "jobs@apple.com",
+        "company_location": "Cupertino, CA",
+        "job_name": "iOS App Developer",
+        "job_location": "On-site",
+        "job_description": "Develop innovative and user-friendly iOS applications.",
+        "job_responsibilities": [
+            "Collaborate with cross-functional teams to define app requirements and features.",
+            "Design and build high-quality and responsive user interfaces.",
+            "Optimize app performance for various iOS devices.",
+            "Troubleshoot and fix bugs and performance bottlenecks.",
+            "Stay updated with the latest trends and technologies in iOS app development."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Computer Science or related field",
+            "Proficiency in Swift and Objective-C",
+            "Experience with iOS SDK and Xcode",
+            "Familiarity with RESTful APIs and third-party libraries",
+            "Published apps on the App Store is a plus"
+        ],
+        "salary_range": "$90,000 - $120,000 per year",
+        "required_experience": "2+ years in iOS app development."
+    },
+    {
+        "id": 27,
+        "company_name": "Netflix",
+        "company_logo": "/src/assets/logo/netflix_logo.png",
+        "company_phone": "+1 (789) 012-3456",
+        "company_email": "careers@netflix.com",
+        "company_location": "Los Gatos, CA",
+        "job_name": "Film Production Assistant",
+        "job_location": "On-site",
+        "job_description": "Support film production activities and ensure smooth operations on set.",
+        "job_responsibilities": [
+            "Assist with equipment setup and breakdown.",
+            "Coordinate logistics and schedules for cast and crew.",
+            "Manage props, costumes, and other production materials.",
+            "Provide general administrative support to the production team.",
+            "Adhere to safety protocols and guidelines on set."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Film Production or related field (preferred)",
+            "Passion for the film and entertainment industry",
+            "Strong organizational and multitasking skills",
+            "Effective communication and teamwork abilities",
+            "Experience in film production is a plus"
+        ],
+        "salary_range": "$30,000 - $40,000 per year",
+        "required_experience": "None, training provided."
+    },
+    {
+        "id": 28,
+        "company_name": "SpaceX",
+        "company_logo": "/src/assets/logo/spacex_logo.png",
+        "company_phone": "+1 (890) 123-4567",
+        "company_email": "careers@spacex.com",
+        "company_location": "Hawthorne, CA",
+        "job_name": "Rocket Engineer",
+        "job_location": "On-site",
+        "job_description": "Contribute to the design, development, and testing of next-generation rockets.",
+        "job_responsibilities": [
+            "Participate in the design and analysis of rocket components.",
+            "Collaborate with teams to solve technical challenges and ensure mission success.",
+            "Conduct tests and simulations to validate rocket performance.",
+            "Assist in the assembly and integration of rocket systems.",
+            "Stay current with aerospace engineering advancements."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Aerospace Engineering or related field",
+            "Strong knowledge of propulsion systems and aerodynamics",
+            "Proficiency in engineering software (MATLAB, SolidWorks, etc.)",
+            "Hands-on experience with rocket systems and testing",
+            "Passion for space exploration and innovation"
+        ],
+        "salary_range": "$80,000 - $110,000 per year",
+        "required_experience": "2+ years in aerospace engineering."
+    },
+    {
+        "id": 29,
+        "company_name": "Uber",
+        "company_logo": "/src/assets/logo/uber_logo.png",
+        "company_phone": "+1 (012) 345-6789",
+        "company_email": "jobs@uber.com",
+        "company_location": "San Francisco, CA",
+        "job_name": "Data Analyst",
+        "job_location": "Remote",
+        "job_description": "Analyze and interpret data to drive insights and inform business decisions.",
+        "job_responsibilities": [
+            "Collect, clean, and transform data for analysis.",
+            "Perform statistical analysis and generate visualizations.",
+            "Collaborate with teams to identify trends and opportunities.",
+            "Present findings and recommendations to stakeholders.",
+            "Develop and maintain data dashboards and reports."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Data Science, Statistics, or related field",
+            "Proficiency in data analysis tools (Python, R, SQL, etc.)",
+            "Experience with data visualization and dashboarding tools",
+            "Strong analytical and problem-solving skills",
+            "Effective communication and data storytelling abilities"
+        ],
+        "salary_range": "$60,000 - $90,000 per year",
+        "required_experience": "2+ years in data analysis."
+    },
+    {
+        "id": 400,
+        "company_name": "Airbnb",
+        "company_logo": "/src/assets/logo/airbnb_logo.png",
+        "company_phone": "+1 (234) 567-8901",
+        "company_email": "careers@airbnb.com",
+        "company_location": "San Francisco, CA",
+        "job_name": "Hospitality Manager",
+        "job_location": "On-site",
+        "job_description": "Ensure exceptional guest experiences and manage property operations.",
+        "job_responsibilities": [
+            "Coordinate guest check-in and check-out procedures.",
+            "Maintain property cleanliness and organization.",
+            "Address guest inquiries, concerns, and requests.",
+            "Collaborate with maintenance and housekeeping teams.",
+            "Optimize property listings for maximum occupancy."
+        ],
+        "job_requirements": [
+            "High school diploma or equivalent",
+            "Strong customer service and interpersonal skills",
+            "Organizational and problem-solving abilities",
+            "Familiarity with property management systems",
+            "Experience in hospitality or property management is a plus"
+        ],
+        "salary_range": "$35,000 - $50,000 per year",
+        "required_experience": "None, training provided."
+    },
+    {
+        "id": 401,
+        "company_name": "IBM",
+        "company_logo": "/src/assets/logo/airbnb_logo.png",
+        "company_phone": "+1 (345) 678-9012",
+        "company_email": "jobs@ibm.com",
+        "company_location": "Armonk, NY",
+        "job_name": "Cybersecurity Analyst",
+        "job_location": "Remote",
+        "job_description": "Monitor and protect systems from cybersecurity threats and attacks.",
+        "job_responsibilities": [
+            "Implement security measures to safeguard digital assets.",
+            "Analyze security vulnerabilities and develop mitigation strategies.",
+            "Conduct penetration testing and security assessments.",
+            "Respond to and investigate security incidents.",
+            "Stay current with cybersecurity trends and threat landscape."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Cybersecurity, Computer Science, or related field",
+            "Certifications in cybersecurity (CISSP, CEH, etc.)",
+            "Experience with security tools and technologies",
+            "Knowledge of network protocols and system vulnerabilities",
+            "Strong problem-solving and critical-thinking skills"
+        ],
+        "salary_range": "$70,000 - $100,000 per year",
+        "required_experience": "2+ years in cybersecurity."
+    },
+    {
+        "id": 402,
+        "company_name": "Adobe",
+        "company_logo": "/src/assets/logo/adobe_logo.png",
+        "company_phone": "+1 (456) 789-0123",
+        "company_email": "careers@adobe.com",
+        "company_location": "San Jose, CA",
+        "job_name": "Graphic Designer",
+        "job_location": "Remote",
+        "job_description": "Create visually compelling designs for digital and print media.",
+        "job_responsibilities": [
+            "Design marketing materials, social media graphics, and illustrations.",
+            "Collaborate with teams to develop design concepts and strategies.",
+            "Ensure brand consistency across various visual assets.",
+            "Utilize design software to produce high-quality graphics.",
+            "Stay updated with design trends and industry developments."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Graphic Design or related field",
+            "Proficiency in Adobe Creative Suite (Photoshop, Illustrator, InDesign)",
+            "Strong portfolio showcasing design projects",
+            "Understanding of typography, color theory, and layout design",
+            "Excellent creative and communication skills"
+        ],
+        "salary_range": "$50,000 - $70,000 per year",
+        "required_experience": "1+ years in graphic design."
+    },
+    {
+        "id": 403,
+        "company_name": "Netflix",
+        "company_logo": "/src/assets/logo/netflix_logo.png",
+        "company_phone": "+1 (567) 890-1234",
+        "company_email": "careers@netflix.com",
+        "company_location": "Los Gatos, CA",
+        "job_name": "Content Writer",
+        "job_location": "Remote",
+        "job_description": "Craft engaging and persuasive content for marketing and promotional purposes.",
+        "job_responsibilities": [
+            "Write compelling copy for advertisements, emails, and social media.",
+            "Create engaging blog posts and articles on various topics.",
+            "Edit and proofread content for accuracy and clarity.",
+            "Collaborate with marketing teams to develop content strategies.",
+            "Adapt writing style to target different audiences and platforms."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in English, Journalism, Marketing, or related field",
+            "Exceptional writing, editing, and proofreading skills",
+            "Experience in content creation for digital platforms",
+            "Ability to work under deadlines and manage multiple projects",
+            "Creative thinking and attention to detail"
+        ],
+        "salary_range": "$45,000 - $60,000 per year",
+        "required_experience": "2+ years in content writing."
+    },
+    {
+        "id": 404,
+        "company_name": "SpaceX",
+        "company_logo": "/src/assets/logo/spacex_logo.png",
+        "company_phone": "+1 (890) 123-4567",
+        "company_email": "careers@spacex.com",
+        "company_location": "Hawthorne, CA",
+        "job_name": "Avionics Engineer",
+        "job_location": "On-site",
+        "job_description": "Design and develop electronic systems for spacecraft and rockets.",
+        "job_responsibilities": [
+            "Design and integrate avionics systems for space missions.",
+            "Develop hardware and software for control systems.",
+            "Conduct testing and verification of avionics components.",
+            "Collaborate with cross-functional teams on system integration.",
+            "Troubleshoot and resolve technical issues."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Electrical Engineering, Aerospace Engineering, or related field",
+            "Proficiency in embedded systems programming (C, C++)",
+            "Experience with microcontrollers and sensors",
+            "Knowledge of communication protocols (UART, SPI, I2C)",
+            "Passion for space exploration and innovation"
+        ],
+        "salary_range": "$75,000 - $100,000 per year",
+        "required_experience": "2+ years in avionics engineering."
+    },
+    {
+        "id": 405,
+        "company_name": "Amazon",
+        "company_logo": "/src/assets/logo/amazon_logo.png",
+        "company_phone": "+1 (012) 345-6789",
+        "company_email": "jobopenings@amazon.com",
+        "company_location": "Seattle, WA",
+        "job_name": "Supply Chain Analyst",
+        "job_location": "On-site",
+        "job_description": "Optimize supply chain operations for efficient inventory management.",
+        "job_responsibilities": [
+            "Analyze supply chain data to identify trends and opportunities.",
+            "Forecast demand and monitor inventory levels.",
+            "Collaborate with suppliers and logistics partners.",
+            "Optimize distribution and transportation strategies.",
+            "Implement process improvements for supply chain efficiency."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Supply Chain Management, Operations Research, or related field",
+            "Proficiency in data analysis tools (Excel, SQL, etc.)",
+            "Knowledge of supply chain concepts and methodologies",
+            "Strong problem-solving and analytical skills",
+            "Effective communication and teamwork abilities"
+        ],
+        "salary_range": "$60,000 - $85,000 per year",
+        "required_experience": "2+ years in supply chain or logistics."
+    },
+    {
+        "id": 406,
+        "company_name": "Airbnb",
+        "company_logo": "/src/assets/logo/airbnb_logo.png",
+        "company_phone": "+1 (234) 567-8901",
+        "company_email": "careers@airbnb.com",
+        "company_location": "San Francisco, CA",
+        "job_name": "UX/UI Designer",
+        "job_location": "On-site",
+        "job_description": "Create intuitive and visually appealing user experiences for Airbnb's digital platforms.",
+        "job_responsibilities": [
+            "Design user interfaces for web and mobile applications.",
+            "Collaborate with product managers and engineers on design concepts.",
+            "Conduct user research and usability testing.",
+            "Create wireframes, prototypes, and design mockups.",
+            "Ensure consistent design language and brand identity."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Design, HCI, or related field",
+            "Proficiency in design software (Sketch, Figma, Adobe XD, etc.)",
+            "Strong portfolio showcasing UI/UX design projects",
+            "Understanding of user-centered design principles",
+            "Effective communication and collaboration skills"
+        ],
+        "salary_range": "$70,000 - $95,000 per year",
+        "required_experience": "3+ years in UI/UX design."
+    },
+    {
+        "id": 407,
+        "company_name": "Google",
+        "company_logo": "/src/assets/logo/google_logo.png",
+        "company_phone": "+1 (123) 456-7890",
+        "company_email": "contact@google.com",
+        "company_location": "Mountain View, CA",
+        "job_name": "Software Engineer",
+        "job_location": "Remote",
+        "job_description": "Develop and maintain software applications that impact millions of users.",
+        "job_responsibilities": [
+            "Collaborate with cross-functional teams to define, design, and ship new features.",
+            "Write clean, maintainable, and efficient code.",
+            "Troubleshoot, debug, and optimize software solutions.",
+            "Participate in code reviews to maintain code quality and share knowledge.",
+            "Stay up-to-date with industry best practices and technologies."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Computer Science or related field",
+            "Proficiency in Python and JavaScript",
+            "Experience with web development frameworks",
+            "Strong problem-solving skills",
+            "Familiarity with version control systems"
+        ],
+        "salary_range": "$80,000 - $120,000 per year",
+        "required_experience": "3+ years in software development."
+    },
+    {
+        "id": 408,
+        "company_name": "Tesla",
+        "company_logo": "/src/assets/logo/tesla_logo.png",
+        "company_phone": "+1 (234) 567-8901",
+        "company_email": "careers@tesla.com",
+        "company_location": "Palo Alto, CA",
+        "job_name": "Electrical Engineer",
+        "job_location": "On-site",
+        "job_description": "Design and optimize electrical systems for cutting-edge electric vehicles.",
+        "job_responsibilities": [
+            "Design and develop electrical circuits and components.",
+            "Conduct simulations and testing to ensure system performance.",
+            "Collaborate with multidisciplinary teams to integrate electrical systems.",
+            "Troubleshoot and resolve electrical issues.",
+            "Stay informed about emerging technologies in the field."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Electrical Engineering",
+            "Proficiency in CAD software (AutoCAD, SolidWorks)",
+            "Hands-on experience with circuit design and testing",
+            "Understanding of power electronics and battery systems"
+        ],
+        "salary_range": "$70,000 - $110,000 per year",
+        "required_experience": "2+ years in electrical engineering."
+    },
+    {
+        "id": 409,
+        "company_name": "Microsoft",
+        "company_logo": "/src/assets/logo/microsoft_logo.png",
+        "company_phone": "+1 (345) 678-9012",
+        "company_email": "jobs@microsoft.com",
+        "company_location": "Redmond, WA",
+        "job_name": "Cloud Solutions Architect",
+        "job_location": "On-site",
+        "job_description": "Design and implement cloud solutions for enterprise clients.",
+        "job_responsibilities": [
+            "Collaborate with clients to understand their business needs and translate them into technical solutions.",
+            "Design, deploy, and manage scalable and reliable cloud infrastructure.",
+            "Lead and mentor cross-functional teams during project implementations.",
+            "Stay up-to-date with cloud technologies and industry trends."
+        ],
+        "job_requirements": [
+            "Bachelor's degree in Computer Science or related field",
+            "Certifications in cloud technologies (e.g., AWS, Azure)",
+            "Strong knowledge of cloud platforms and architecture design",
+            "Experience with infrastructure-as-code tools (e.g., Terraform)"
+        ],
+        "salary_range": "$90,000 - $130,000 per year",
+        "required_experience": "5+ years in cloud architecture and deployment."
+    },
+    {
+        "id": 40,
+        "company_name": "Facebook",
+        "company_logo": "/src/assets/logo/facebook_logo.png",
         "company_phone": "+1 (456) 789-0123",
         "company_email": "careers@facebook.com",
         "company_location": "Menlo Park, CA",
@@ -530,3 +1061,5 @@
         "required_experience": "3+ years in UI/UX design."
     }
 ]
+
+
