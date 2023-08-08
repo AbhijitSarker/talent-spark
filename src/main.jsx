@@ -13,6 +13,7 @@ import Applied from './components/Applied/Applied';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Blogs from './components/Blogs/Blogs';
+import Job from './components/Job/Job';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,16 @@ const router = createBrowserRouter([
         path: '/jobs',
         element: <Jobs></Jobs>,
         loader: () => fetch('jobs.json')
+      },
+      {
+        path: '/job/:jobId',
+        element: <Job></Job>,
+        loader: async ({ params }) => {
+          const response = await fetch('/jobs.json'); // Adjust the path based on your project structure
+          const data = await response.json();
+          const job = data.find(job => job.id === parseInt(params.jobId));
+          return job;
+        }
       },
       {
         path: '/applied',

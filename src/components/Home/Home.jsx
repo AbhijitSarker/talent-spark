@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css'
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import JobCard from '../JobCard/JobCard';
 const Home = () => {
-    const jobs = useLoaderData();
+    // const jobs = useLoaderData();
+    const [jobs, setJobs] = useState([]);
+
+    useEffect(() => {
+        async function fetchJobs() {
+            try {
+                const response = await fetch('/jobs.json');
+                const data = await response.json();
+                setJobs(data);
+            } catch (error) {
+                console.error('Error fetching jobs:', error);
+            }
+        }
+
+        fetchJobs();
+    }, []);
 
     return (
         <div className=' w-auto'>
@@ -12,7 +27,7 @@ const Home = () => {
                     <div>
                         <h1 className='lg:leading-relaxed text-5xl md:text-7xl font-bold p-5'>One Step <br /> CLOOSER To Your <br /><span className='text-purple-600 font-extrabold'>DREAM JOB</span></h1>
                         <p className='p-4 md:p-5 text-xl md:text-2xl'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
-                        <button className=' mr-10 rounded-md bg-sky-500 hover:bg-purple-600 px-5 m-5 py-2 font-medium text-white'> Get Started</button>
+                        <Link to='/jobs'><button className=' mr-10 rounded-md bg-sky-500 hover:bg-purple-600 px-5 m-5 py-2 font-medium text-white'> Get Started</button></Link>
                     </div>
                     <div>
                         <img className='' src="/src/assets/images/P3OLGJ1 copy 1.png" alt="" />

@@ -1,34 +1,8 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 
-
-const staticJobData = {
-    "id": 20,
-    "company_name": "Facebook",
-    "company_logo": "facebook_logo.png",
-    "company_phone": "+1 (456) 789-0123",
-    "company_email": "careers@facebook.com",
-    "company_location": "Menlo Park, CA",
-    "job_name": "Product Designer",
-    "job_location": "Remote",
-    "job_description": "Create user-centered design solutions for social media platforms.",
-    "job_responsibilities": [
-        "Collaborate with product managers and engineers to define design goals and requirements.",
-        "Design intuitive and visually appealing user interfaces and experiences.",
-        "Create wireframes, mockups, and prototypes to communicate design concepts.",
-        "Conduct user research and usability testing to iterate on design solutions."
-    ],
-    "job_requirements": [
-        "Bachelor's degree in Design, HCI, or related field",
-        "Proficiency in design software (e.g., Sketch, Figma, Adobe Creative Suite)",
-        "Strong portfolio showcasing previous design work",
-        "Experience with user-centered design principles and methodologies"
-    ],
-    "salary_range": "$75,000 - $110,000 per year",
-    "required_experience": "3+ years in UI/UX design."
-};
-
-
-const JobComponent = () => {
+const Job = () => {
+    const job = useLoaderData()
     const {
         company_name,
         company_logo,
@@ -42,10 +16,13 @@ const JobComponent = () => {
         job_requirements,
         salary_range,
         required_experience,
-    } = staticJobData;
-
+    } = job;
+    // console.log(job);
     return (
         <div>
+
+
+
             <div className="bg-gray-100 min-h-screen py-10">
                 <div className="max-w-4xl mx-auto px-4">
                     <div className="bg-white rounded-lg shadow-md p-6">
@@ -110,4 +87,4 @@ const JobComponent = () => {
     );
 };
 
-export default JobComponent;
+export default Job;

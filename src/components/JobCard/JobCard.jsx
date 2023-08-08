@@ -1,12 +1,13 @@
 import React from 'react';
 import './JobCard';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './JobsCard.css'
 
 
 const JobCard = ({ job }) => {
     const {
+        id,
         company_name,
         company_logo,
         company_phone,
@@ -21,6 +22,11 @@ const JobCard = ({ job }) => {
         required_experience,
     } = job;
 
+    // const navigate = useNavigate();
+
+    // const handleRoute = () => {
+    //     navigate(`/job/${job.id}`)
+    // }
 
     return (
 
@@ -54,41 +60,12 @@ const JobCard = ({ job }) => {
                 >
                     Apply Now
                 </a>
-                <Link className="text-purple-600 hover:underline shadow-md hover:text-blue-600 border  hover:bg-blue-100 border-purple-300 px-10 py-3 rounded">View Details</Link>
+                <Link to={`/job/${id}`} className="text-purple-600 hover:underline shadow-md hover:text-blue-600 border  hover:bg-blue-100 border-purple-300 px-10 py-3 rounded">View Details</Link>
+                {/* <button onClick={handleRoute}>dettal</button>
+                <Link to={`/job/${id}`}><button>Details</button></Link> */}
             </div>
 
         </div>
-
-
-
-        // <div className="max-w-xs mx-auto bg-white shadow-md rounded-lg overflow-hidden">
-        //     <img
-        //         src={company_logo}
-        //         alt={`${company_name} Logo`}
-        //         className="w-auto h-auto object-cover"
-        //     />
-        //     <div className="p-4">
-        //         <h2 className="text-xl font-semibold mb-2">{job_name}</h2>
-        //         <p className="text-gray-600 mb-2">{company_name}</p>
-        //         <p className="text-gray-600 mb-2">{job_location}</p>
-        //         <p className="font-semibold mb-2">{salary_range}</p>
-        //         <p className="text-gray-600 mb-4">{required_experience}</p>
-        //         <div className="flex justify-between">
-        //             <a
-        //                 href={`tel:${company_phone}`}
-        //                 className="text-blue-500 hover:underline hover:text-blue-700"
-        //             >
-        //                 Call Now
-        //             </a>
-        //             <a
-        //                 href={`mailto:${company_email}`}
-        //                 className="text-blue-500 hover:underline hover:text-blue-700"
-        //             >
-        //                 Apply Now
-        //             </a>
-        //         </div>
-        //     </div>
-        // </div>
     );
 };
 
