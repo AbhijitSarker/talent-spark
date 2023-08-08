@@ -9,8 +9,8 @@ const Jobs = () => {
 
 
     return (
-        <div>
-            <div className='grid lg:grid-cols-2 container mx-auto gap-5'>
+        <div className=' min-h-screen py-16'>
+            <div className=' grid lg:grid-cols-2 container mx-auto gap-10'>
                 {
                     jobs.map(job => <JobCard
                         key={job.id}
