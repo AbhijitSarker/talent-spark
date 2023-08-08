@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import JobCard from '../JobCard/JobCard';
 import { useLoaderData } from 'react-router-dom';
+import { addToDb, getappliedJobs } from '../../utilities/fakedb';
+import { addBookmark, getBookmark, getStoredBookmarks } from '../../utilities/database';
 
 
 const Jobs = () => {
     // const jobs = useLoaderData();
 
     const [jobs, setJobs] = useState([]);
+
+    const [applied, setApplied] = useState([]);
 
     useEffect(() => {
         async function fetchJobs() {
@@ -21,7 +25,33 @@ const Jobs = () => {
 
         fetchJobs();
     }, []);
-    // console.log(jobs);
+
+    useEffect(() => {
+        const storedJobs = getappliedJobs();
+        const savedJobs = [];
+
+        for (const id in storedJobs) {
+            const appliedJobs = jobs.find(job => job.id === id);
+            if (appliedJobs) {
+                savedJobs.push(appliedJobs);
+            }
+        }
+        setApplied(savedJobs);
+    }, [jobs]);
+
+    const handleApplyJob = (appliedJob) => {
+        let newAppliedJobs = [];
+        const exists = applied.find(job => job.id === appliedJob.id);
+        if (exists) {
+            newAppliedJobs = [...applied, appliedJob];
+        }
+        else {
+            const rest = applied.filter(job => job.id !== appliedJob);
+            newAppliedJobs = [...rest, appliedJob];
+        }
+        setApplied(newAppliedJobs);
+        addToDb(appliedJob.id)
+    }
 
     return (
         <div className=' min-h-screen py-16'>
@@ -30,6 +60,7 @@ const Jobs = () => {
                     jobs.map(job => <JobCard
                         key={job.id}
                         job={job}
+                        handleApplyJob={handleApplyJob}
                     ></JobCard>)
                 }
             </div>

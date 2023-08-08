@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './JobsCard.css'
 
 
-const JobCard = ({ job }) => {
+const JobCard = ({ job, handleApplyJob }) => {
     const {
         id,
         company_name,
@@ -54,8 +54,9 @@ const JobCard = ({ job }) => {
             <div className="flex justify-between">
 
                 <a
-                    target='_blank'
-                    href={`mailto:${company_email}`}
+                    // target='_blank'
+                    // href={`mailto:${company_email}`}
+                    onClick={() => handleApplyJob(job)}
                     className="text-purple-600 hover:underline shadow-md hover:text-blue-600 border  hover:bg-blue-100 border-purple-300 px-10 py-3 rounded"
                 >
                     Apply Now
