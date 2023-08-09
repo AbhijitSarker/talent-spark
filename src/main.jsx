@@ -24,22 +24,22 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('jobs.json')
+        loader: () => fetch('/public/jobs.json')
       },
       {
         path: '/jobs',
         element: <Jobs></Jobs>,
-        // loader: jobLoader
+        loader: jobLoader
       },
       {
         path: '/job/:jobId',
         element: <Job></Job>,
-        loader: async ({ params }) => {
-          const response = await fetch('/jobs.json'); // Adjust the path based on your project structure
-          const data = await response.json();
-          const job = data.find(job => job.id === parseInt(params.jobId));
-          return job;
-        }
+        // loader: async ({ params }) => {
+        //   const response = await fetch('/jobs.json');
+        //   const data = await response.json();
+        //   const job = data.find(job => job.id === parseInt(params.jobId));
+        //   return job;
+        // }
       },
       {
         path: '/applied',

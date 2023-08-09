@@ -9,12 +9,11 @@ const Home = () => {
     // const jobs = useLoaderData();
     const [jobs, setJobs] = useState([]);
     const [applied, setApplied] = useState([]);
-    const notify = () => toast('Here is your toast.');
 
     useEffect(() => {
         async function fetchJobs() {
             try {
-                const response = await fetch('/jobs.json');
+                const response = await fetch('/public/jobs.json');
                 const data = await response.json();
                 setJobs(data);
             } catch (error) {

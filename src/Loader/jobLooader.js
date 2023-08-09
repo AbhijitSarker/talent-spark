@@ -2,7 +2,7 @@
 import { getappliedJobs } from "../utilities/fakedb";
 
 const jobLoader = async () => {
-    const loadedJobs = await fetch('jobs.json');
+    const loadedJobs = await fetch('/public/jobs.json');
     const jobs = await loadedJobs.json();
 
 

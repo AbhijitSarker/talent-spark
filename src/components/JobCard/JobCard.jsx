@@ -24,11 +24,11 @@ const JobCard = ({ job, handleApplyJob }) => {
         required_experience,
     } = job;
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
-    // const handleRoute = () => {
-    //     navigate(`/job/${job.id}`)
-    // }
+    const handleRoute = () => {
+        navigate(`/job/${job.id}`)
+    }
 
 
 
@@ -66,8 +66,8 @@ const JobCard = ({ job, handleApplyJob }) => {
                     Apply Now
                 </a>
                 <Link to={`/job/${id}`} className="text-purple-600 hover:underline shadow-md hover:text-blue-600 border  hover:bg-blue-100 border-purple-300 px-10 py-3 rounded">View Details</Link>
-                {/* <button onClick={handleRoute}>dettal</button>
-                <Link to={`/job/${id}`}><button>Details</button></Link> */}
+                <button onClick={handleRoute}>dettal</button>
+                {/* <Link to={`/job/${id}`}><button>Details</button></Link>  */}
             </div>
         </div>
     );
