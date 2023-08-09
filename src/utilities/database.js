@@ -1,48 +1,45 @@
-const addBookmark = (id) => {
-    let bookmarks = getBookmark();
+const addJob = (id) => {
+    let jobs = getJob();
 
-    const storedBookmarks = localStorage.getItem('bookmarks');
+    const storedJobs = localStorage.getItem('applied-jobs');
 
-    if (storedBookmarks) {
-        bookmarks = JSON.parse(storedBookmarks);
+    if (storedJobs) {
+        jobs = JSON.parse(storedJobs);
     }
 
-    const quantity = bookmarks[id];
+    const quantity = jobs[id];
     if (!quantity) {
-        bookmarks[id] = 1;
+        jobs[id] = 1;
     }
-    // else {
-    //     const newQuantity = quantity + 1;
-    //     bookmarks[id] = newQuantity;
-    // }
 
-    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+
+    localStorage.setItem('applied-jobs', JSON.stringify(jobs));
 }
 
-const getBookmark = () => {
-    let bookmarks = {};
+const getJob = () => {
+    let jobs = {};
 
-    const storedBookmarks = localStorage.getItem('bookmarks');
+    const storedJobs = localStorage.getItem('applied-jobs');
 
-    if (storedBookmarks) {
-        bookmarks = JSON.parse(storedBookmarks);
+    if (storedJobs) {
+        jobs = JSON.parse(storedJobs);
     }
 
-    return bookmarks;
+    return jobs;
 }
 
 
-const getStoredBookmarks = () => {
+const getstoredJobs = () => {
 
-    let bookmarks = getBookmark();
+    let jobs = getJob();
 
-    const storedBookmarks = localStorage.getItem('bookmarks');
+    const storedJobs = localStorage.getItem('applied-jobs');
 
-    if (storedBookmarks) {
-        bookmarks = JSON.parse(storedBookmarks);
+    if (storedJobs) {
+        jobs = JSON.parse(storedJobs);
     }
 
-    return bookmarks;
+    return jobs;
 }
 
 
@@ -94,7 +91,7 @@ const getStoredBookmarks = () => {
 
 
 export {
-    addBookmark,
-    getBookmark,
-    getStoredBookmarks
+    addJob,
+    getJob,
+    getstoredJobs
 }

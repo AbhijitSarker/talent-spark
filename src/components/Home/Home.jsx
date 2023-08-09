@@ -3,11 +3,13 @@ import './Home.css'
 import { Link, useLoaderData } from 'react-router-dom';
 import JobCard from '../JobCard/JobCard';
 import { addToDb, getappliedJobs } from '../../utilities/fakedb';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Home = () => {
     // const jobs = useLoaderData();
     const [jobs, setJobs] = useState([]);
     const [applied, setApplied] = useState([]);
+    const notify = () => toast('Here is your toast.');
 
     useEffect(() => {
         async function fetchJobs() {
@@ -39,15 +41,19 @@ const Home = () => {
     const handleApplyJob = (appliedJob) => {
         let newAppliedJobs = [];
         const exists = applied.find(job => job.id === appliedJob.id);
-        if (exists) {
+        if (!exists) {
             newAppliedJobs = [...applied, appliedJob];
+            toast('Successfully Applied')
         }
         else {
             const rest = applied.filter(job => job.id !== appliedJob);
             newAppliedJobs = [...rest, appliedJob];
+            toast('Already Applied')
         }
+
         setApplied(newAppliedJobs);
         addToDb(appliedJob.id)
+
     }
 
     return (
@@ -103,6 +109,7 @@ const Home = () => {
                     ></JobCard>)
                 }
             </div>
+            <Toaster />
         </div>
     );
 };
