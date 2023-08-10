@@ -11,7 +11,7 @@ const Header = () => {
         <div className='bg sticky top-0  pt-2'>
             <nav className=' container mx-auto pt-2 pb-5 flex  h-16 justify-between items-center'>
 
-                <img className='h-10 h-16' src="/src//assets/logo/logo.png" alt="" />
+                <img className='h-10' src="assets/logo/logo.png" alt="" />
                 <div>
                     <div className={`md:flex  absolute md:static duration-500 mb-2   ${open ? 'top-20 right-5' : 'right-5 -top-48'}`}>
                         <ActiveLink className='mr-10  text-purple-600 hover:text-blue-500 font-medium  block' to='/'>Home</ActiveLink>

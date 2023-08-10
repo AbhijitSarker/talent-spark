@@ -3,34 +3,18 @@ import './JobCard';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
 import { Link, useNavigate } from 'react-router-dom';
 import './JobsCard.css'
-import toast, { Toaster } from 'react-hot-toast';
-
-
 
 const JobCard = ({ job, handleApplyJob }) => {
     const {
         id,
         company_name,
         company_logo,
-        company_phone,
-        company_email,
         company_location,
         job_name,
         job_location,
         job_description,
-        job_responsibilities,
-        job_requirements,
         salary_range,
-        required_experience,
     } = job;
-
-    const navigate = useNavigate();
-
-    const handleRoute = () => {
-        navigate(`/job/${job.id}`)
-    }
-
-
 
     return (
 
@@ -66,8 +50,6 @@ const JobCard = ({ job, handleApplyJob }) => {
                     Apply Now
                 </a>
                 <Link to={`/job/${id}`} className="text-purple-600 hover:underline shadow-md hover:text-blue-600 border  hover:bg-blue-100 border-purple-300 px-10 py-3 rounded">View Details</Link>
-                <button onClick={handleRoute}>dettal</button>
-                {/* <Link to={`/job/${id}`}><button>Details</button></Link>  */}
             </div>
         </div>
     );

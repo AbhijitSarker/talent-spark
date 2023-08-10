@@ -15,6 +15,7 @@ import Contact from './components/Contact/Contact';
 import Blogs from './components/Blogs/Blogs';
 import Job from './components/Job/Job';
 import jobLoader from './Loader/jobLooader';
+import ApplicationForm from './components/ApplicationForm/ApplicationForm';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('/public/jobs.json')
+        loader: () => fetch('/jobs.json')
       },
       {
         path: '/jobs',
@@ -34,12 +35,10 @@ const router = createBrowserRouter([
       {
         path: '/job/:jobId',
         element: <Job></Job>,
-        // loader: async ({ params }) => {
-        //   const response = await fetch('/jobs.json');
-        //   const data = await response.json();
-        //   const job = data.find(job => job.id === parseInt(params.jobId));
-        //   return job;
-        // }
+      },
+      {
+        path: '/job/application/:jobId',
+        element: <ApplicationForm></ApplicationForm>,
       },
       {
         path: '/applied',

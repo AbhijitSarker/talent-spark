@@ -1,6 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const ApplicationForm = () => {
+    // const { jobId } = useParams();
+    // const [job, setJob] = useState(null);
+
+    // useEffect(() => {
+    //     async function fetchJobData() {
+    //         try {
+    //             const response = await fetch('/jobs.json');
+    //             const data = await response.json();
+    //             const jobData = data.find(job => job.id === jobId);
+    //             setJob(jobData);
+    //         } catch (error) {
+    //             console.error('Error fetching job data:', error);
+    //         }
+    //     }
+
+    //     fetchJobData();
+    // }, [jobId]);
+
+    // if (!job) {
+    //     return <div>Loading...</div>;
+    // }
+
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
