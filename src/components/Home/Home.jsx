@@ -7,6 +7,9 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const Home = () => {
     const [jobs, setJobs] = useState([]);
+    const [displayedJobs, setDisplayedJobs] = useState([]);
+    const [numDisplayedJobs, setNumDisplayedJobs] = useState(6);
+
     const [applied, setApplied] = useState([]);
 
     useEffect(() => {
@@ -15,14 +18,20 @@ const Home = () => {
                 const response = await fetch('/jobs.json');
                 const data = await response.json();
                 setJobs(data);
+                setDisplayedJobs(data.slice(0, numDisplayedJobs));
+
             } catch (error) {
                 console.error('Error fetching jobs:', error);
             }
         }
 
         fetchJobs();
-    }, []);
+    }, [numDisplayedJobs]);
 
+    const loadMoreJobs = () => {
+        setDisplayedJobs(jobs.slice(0, numDisplayedJobs + 6));
+        setNumDisplayedJobs(prevCount => prevCount + 6);
+    }
     useEffect(() => {
         const storedJobs = getappliedJobs();
         const savedJobs = [];
@@ -55,7 +64,7 @@ const Home = () => {
     }
 
     return (
-        <div className='bg-gray-100 min-h-scree w-auto'>
+        <div className='pb-16 bg-gray-100 min-h-scree w-auto'>
             <div className='home-container'>
                 <div className='container mx-auto lg:grid lg:grid-cols-2 justify-between items-center'>
                     <div>
@@ -71,7 +80,7 @@ const Home = () => {
             </div>
 
             <div className='container mx-auto my-20'>
-                <h3 className=' text-4xl md:text-5xl text-black mb-5 font-bold text-center'>Job Category List</h3>
+                <h3 className=' text-4xl md:text-5xl text-purple-600 mb-5 font-bold text-center'>Job Category List</h3>
                 <p className='text-center text-xl mb-16'> Explore thousands of job opportunities with all the information you need. Its your future</p>
                 <div className=' grid lg:grid-cols-4 justify-center gap-5 '>
                     <div className='home-container p-10 w-80 h-60 rounded-md hover:bg-blue-100'>
@@ -97,15 +106,25 @@ const Home = () => {
 
                 </div>
             </div>
+            <div className=''>
+                <h3 className=' text-4xl md:text-5xl text-purple-600 mb-5 font-bold text-center'>Featured Jobs</h3>
+                <p className='text-center text-xl mb-16'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <div className='grid lg:grid-cols-2 container mx-auto gap-10'>
 
-            <div className='grid lg:grid-cols-2 container mx-auto gap-10'>
-                {
-                    jobs.map(job => <JobCard
-                        key={job.id}
-                        job={job}
-                        handleApplyJob={handleApplyJob}
-                    ></JobCard>)
-                }
+                    {
+                        displayedJobs.map(job => <JobCard
+                            key={job.id}
+                            job={job}
+                            handleApplyJob={handleApplyJob}
+                        ></JobCard>)
+                    }
+
+                </div>
+            </div>
+            <div className='flex justify-center'>
+                {numDisplayedJobs < jobs.length && (
+                    <button className=' mr-10 rounded-md bg-sky-500 hover:bg-purple-600 px-5 m-5 py-2 font-medium text-white' onClick={loadMoreJobs}>Load More Jobs</button>
+                )}
             </div>
             <Toaster />
         </div>

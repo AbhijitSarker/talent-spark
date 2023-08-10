@@ -50,7 +50,7 @@ const JobCard = ({ job, handleApplyJob }) => {
                     Apply Now
                 </a> */}
                 <Link to={`/job/application/${id}`} onClick={() => handleApplyJob(job)} className="text-purple-600 hover:underline shadow-md hover:text-blue-600 border  hover:bg-blue-100 border-purple-300 px-10 py-3 rounded">Apply</Link>
-                <Link to={`/job/${id}`} className="text-purple-600 hover:underline shadow-md hover:text-blue-600 border  hover:bg-blue-100 border-purple-300 px-10 py-3 rounded">View Details</Link>
+                <Link to={`/job/${id}`} className="text-purple-600 hover:underline shadow-md hover:text-blue-600 border  hover:bg-blue-100 border-purple-300 px-10 py-3 rounded">Details</Link>
             </div>
         </div>
     );

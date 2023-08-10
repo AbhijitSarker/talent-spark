@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import './Applied.css'
 import AppliedJob from '../AppliedJob/AppliedJob';
-import JobCard from '../JobCard/JobCard';
+
 const Applied = () => {
     const applied = useLoaderData();
     return (
-        <div>
-            <div className='bg-gray-100 min-h-screen py-16'>
+        <div className='bg-gray-100 min-h-screen py-16'>
+            <div className=' container mx-auto '>
                 {
                     applied.map(job => <AppliedJob
                         key={job.id}
