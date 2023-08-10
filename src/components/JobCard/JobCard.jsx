@@ -41,14 +41,15 @@ const JobCard = ({ job, handleApplyJob }) => {
             <li className='py-5'>{job_description}</li>
             <div className="flex justify-between">
 
-                <a
+                {/* <a
                     // target='_blank'
                     // href={`mailto:${company_email}`}
                     onClick={() => handleApplyJob(job)}
                     className="text-purple-600 hover:underline shadow-md hover:text-blue-600 border  hover:bg-blue-100 border-purple-300 px-10 py-3 rounded"
                 >
                     Apply Now
-                </a>
+                </a> */}
+                <Link to={`/job/application/${id}`} onClick={() => handleApplyJob(job)} className="text-purple-600 hover:underline shadow-md hover:text-blue-600 border  hover:bg-blue-100 border-purple-300 px-10 py-3 rounded">Apply</Link>
                 <Link to={`/job/${id}`} className="text-purple-600 hover:underline shadow-md hover:text-blue-600 border  hover:bg-blue-100 border-purple-300 px-10 py-3 rounded">View Details</Link>
             </div>
         </div>

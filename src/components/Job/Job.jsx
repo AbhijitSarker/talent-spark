@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { addToDb } from '../../utilities/fakedb';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Job = () => {
     const { jobId } = useParams();
@@ -38,7 +40,13 @@ const Job = () => {
         salary_range,
         required_experience,
     } = job;
-    console.log(company_logo);
+
+
+
+    const handleApplyJob = (id) => {
+        addToDb(id)
+
+    }
     return (
         <div className="bg-gray-100 min-h-screen py-10">
             <div className="max-w-4xl mx-auto px-4">
@@ -84,13 +92,7 @@ const Job = () => {
                     </ul>
                     <p className="text-gray-600 mb-4">Experience: {required_experience}</p>
                     <div className="flex justify-between items-center">
-                        <a
-                            href={`tel:${company_phone}`}
-                            className="text-blue-500 hover:underline hover:text-blue-700"
-                        >
-                            Call Now
-                        </a>
-                        <Link to={`/job/application/${id}`} className="text-purple-600 hover:underline shadow-md hover:text-blue-600 border  hover:bg-blue-100 border-purple-300 px-10 py-3 rounded">View Details</Link>
+                        <Link to={`/job/application/${id}`} onClick={() => handleApplyJob(id)} className="text-purple-600 hover:underline shadow-md hover:text-blue-600 border  hover:bg-blue-100 border-purple-300 px-10 py-3 rounded">Apply</Link>
 
                     </div>
                 </div>

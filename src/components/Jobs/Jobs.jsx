@@ -46,7 +46,7 @@ const Jobs = () => {
     }
 
     return (
-        <div className=' min-h-screen py-16'>
+        <div className='bg-gray-100 min-h-screen py-16'>
             <div className=' grid lg:grid-cols-2 container mx-auto gap-10'>
                 {
                     jobs.map(job => <JobCard

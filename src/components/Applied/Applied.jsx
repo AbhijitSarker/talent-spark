@@ -5,11 +5,9 @@ import AppliedJob from '../AppliedJob/AppliedJob';
 import JobCard from '../JobCard/JobCard';
 const Applied = () => {
     const applied = useLoaderData();
-    const [appliedJobs, setAppliedJobs] = useState([applied]);
-    // console.log(applied);
     return (
         <div>
-            <div>
+            <div className='bg-gray-100 min-h-screen py-16'>
                 {
                     applied.map(job => <AppliedJob
                         key={job.id}

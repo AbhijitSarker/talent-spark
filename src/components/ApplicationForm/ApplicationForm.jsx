@@ -1,28 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import toast, { Toaster } from 'react-hot-toast';
 
 const ApplicationForm = () => {
-    // const { jobId } = useParams();
-    // const [job, setJob] = useState(null);
-
-    // useEffect(() => {
-    //     async function fetchJobData() {
-    //         try {
-    //             const response = await fetch('/jobs.json');
-    //             const data = await response.json();
-    //             const jobData = data.find(job => job.id === jobId);
-    //             setJob(jobData);
-    //         } catch (error) {
-    //             console.error('Error fetching job data:', error);
-    //         }
-    //     }
-
-    //     fetchJobData();
-    // }, [jobId]);
-
-    // if (!job) {
-    //     return <div>Loading...</div>;
-    // }
+    const notify = () => { }
 
     const [formData, setFormData] = useState({
         fullName: '',
@@ -54,12 +34,12 @@ const ApplicationForm = () => {
         e.preventDefault();
 
         localStorage.setItem('jobApplicationFormData', JSON.stringify(formData));
-        alert('Your Application Has been submitted');
+        toast('Successfully Applied')
     };
 
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-100">
-            <div className="w-full sm:w-2/3 md:w-1/2 bg-white p-8 shadow-md rounded-md">
+            <div className="w-full text-purple-600 sm:w-2/3 md:w-1/2 bg-white p-8 shadow-md rounded-md">
                 <h2 className="text-2xl font-semibold mb-6">Job Application Form</h2>
                 <form onSubmit={handleSubmit}>
 
@@ -145,9 +125,11 @@ const ApplicationForm = () => {
                         />
                     </div>
 
-                    <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
+                    <button onClick={notify} type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
                         Submit
                     </button>
+                    <Toaster />
+
                 </form>
             </div>
         </div>

@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css'
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import JobCard from '../JobCard/JobCard';
 import { addToDb, getappliedJobs } from '../../utilities/fakedb';
 import toast, { Toaster } from 'react-hot-toast';
 
 const Home = () => {
-    // const jobs = useLoaderData();
     const [jobs, setJobs] = useState([]);
     const [applied, setApplied] = useState([]);
 
@@ -42,12 +41,12 @@ const Home = () => {
         const exists = applied.find(job => job.id === appliedJob.id);
         if (!exists) {
             newAppliedJobs = [...applied, appliedJob];
-            toast('Successfully Applied')
+
         }
         else {
             const rest = applied.filter(job => job.id !== appliedJob);
             newAppliedJobs = [...rest, appliedJob];
-            toast('Already Applied')
+
         }
 
         setApplied(newAppliedJobs);
@@ -56,7 +55,7 @@ const Home = () => {
     }
 
     return (
-        <div className=' w-auto'>
+        <div className='bg-gray-100 min-h-scree w-auto'>
             <div className='home-container'>
                 <div className='container mx-auto lg:grid lg:grid-cols-2 justify-between items-center'>
                     <div>
