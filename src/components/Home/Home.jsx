@@ -80,7 +80,7 @@ const Home = () => {
             </div>
 
             <div className='container mx-auto my-20'>
-                <h3 className=' text-4xl md:text-5xl text-purple-600 mb-5 font-bold text-center'>Job Category List</h3>
+                <h3 className=' text-4xl md:text-5xl text-black mb-5 font-bold text-center'>Job Category List</h3>
                 <p className='text-center text-xl mb-16'> Explore thousands of job opportunities with all the information you need. Its your future</p>
                 <div className=' grid lg:grid-cols-4 justify-center gap-5 '>
                     <div className='home-container p-10 w-80 h-60 rounded-md hover:bg-blue-100'>
@@ -107,7 +107,7 @@ const Home = () => {
                 </div>
             </div>
             <div className=''>
-                <h3 className=' text-4xl md:text-5xl text-purple-600 mb-5 font-bold text-center'>Featured Jobs</h3>
+                <h3 className=' text-4xl md:text-5xl text-black mb-5 font-bold text-center'>Featured Jobs</h3>
                 <p className='text-center text-xl mb-16'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 <div className='grid lg:grid-cols-2 container mx-auto gap-10'>
 
@@ -121,7 +121,7 @@ const Home = () => {
 
                 </div>
             </div>
-            <div className='flex justify-center'>
+            <div className='flex mt-10 justify-center'>
                 {numDisplayedJobs < jobs.length && (
                     <button className=' mr-10 rounded-md bg-sky-500 hover:bg-purple-600 px-5 m-5 py-2 font-medium text-white' onClick={loadMoreJobs}>Load More Jobs</button>
                 )}

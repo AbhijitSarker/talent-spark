@@ -39,7 +39,7 @@ const ApplicationForm = () => {
 
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-100">
-            <div className="w-full text-purple-600 sm:w-2/3 md:w-1/2 bg-white p-8 shadow-md rounded-md">
+            <div className="w-full sm:w-2/3 md:w-1/2 bg-white p-8 shadow-md rounded-md">
                 <h2 className="text-2xl font-semibold mb-6">Job Application Form</h2>
                 <form onSubmit={handleSubmit}>
 
@@ -114,7 +114,7 @@ const ApplicationForm = () => {
                         </div>
                     </div>
 
-                    <div className="mb-4">
+                    <div className="mb-4 flex justify-between">
                         <label className="block font-semibold mb-1">Attach Your Resume:</label>
                         <input
                             type="file"
@@ -123,11 +123,12 @@ const ApplicationForm = () => {
                             accept=".pdf,.doc,.docx"
                             onChange={handleFileChange}
                         />
+                        <button onClick={notify} type="submit" className="rounded-md bg-sky-500 hover:bg-purple-600 px-5 m-5 py-2 font-medium text-white">
+                            Submit
+                        </button>
                     </div>
 
-                    <button onClick={notify} type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
-                        Submit
-                    </button>
+
                     <Toaster />
 
                 </form>
